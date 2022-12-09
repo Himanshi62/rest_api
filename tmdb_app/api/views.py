@@ -21,6 +21,7 @@ def list(request):
         else:
             return Response(serializer.errors, status=status.HTTP_406_NOT_ACCEPTABLE)
 
+#####particular movie
 
 @api_view(["GET","PUT","DELETE"])
 def movie_detail(request,pk):
